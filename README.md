@@ -1,177 +1,72 @@
-# FlataBeer
+# Getting Started with Create React App
 
-Today you'll be building an app for viewing and editing beers. You will be using
-a local API and building out the frontend for our app, FlataBeer.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Demo
+## Available Scripts
 
-Use this gif as an example of how the app should work.
+In the project directory, you can run:
 
-![demo gif](https://curriculum-content.s3.amazonaws.com/phase-1/phase-1-code-challenge-flatabeer/demo.gif)
+### `npm start`
 
-> To view in VSCode, right click on the README.md file and select "Open Preview".
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Setup
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Run this command to get the backend started:
+### `npm test`
 
-```console
-$ json-server --watch db.json
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Test your server by visiting this route in the browser:
+### `npm run build`
 
-[http://localhost:3000/beers](http://localhost:3000/beers)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Then, open the `index.html` file on your browser to run the application.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Write your code in the `src/index.js` file. The base URL for your API will be
-[http://localhost:3000](http://localhost:3000).
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Deliverables
+### `npm run eject`
 
-As a user, I can:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-1. See the first beer's details, including its **name, image, description, and
-   reviews**, when the page loads. You will need to make a GET request to the
-   following endpoint to retrieve the beer data, along with its associated
-   reviews:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   ```txt
-   GET /beers/1
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-   Example Response:
-   {
-      "id": 1,
-      "name": "Oh So Flattening",
-      "description": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
-      "image_url": "https://i.ibb.co/wQ4G0w1/flatiron-brew.png",
-      "reviews": [
-        "It's flat! Just the way I like it!!",
-        "Is this the real beer, is this just fantasy?",
-        "I've always hated bubbles going up my nose, so this is absolutely delightful.",
-        "Flat straight out of the bottle! No more waiting for the fizziness to subside. Thank you FlattaBeer!! I love you!!!"
-      ]
-    }
-   ```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-2. See a menu of all beers in the `<nav>` element on the left side of the page
-   when the page loads. You will need to make a GET request to the following
-   endpoint to retrieve the beer data:
+## Learn More
 
-   ```txt
-   GET /beers
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-   Example response:
-   [
-      {
-        "id": 1,
-        "name": "Oh So Flattening",
-        "description": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
-        "image_url": "https://i.ibb.co/wQ4G0w1/flatiron-brew.png",
-        "reviews": [
-          "It's flat! Just the way I like it!!",
-          "Is this the real beer, is this just fantasy?",
-          "I've always hated bubbles going up my nose, so this is absolutely delightful.",
-          "Flat straight out of the bottle! No more waiting for the fizziness to subside. Thank you FlattaBeer!! I love you!!!"
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Pilsen Lager",
-        "description": "Our Unleash the Yeast series was an epic experiment into the differences in aroma and flavour provided by switching up your yeast. We brewed up a wort with a light caramel note and some toasty biscuit flavour, and hopped it with Amarillo and Centennial for a citrusy bitterness. Everything else is down to the yeast. Pilsner yeast ferments with no fruity esters or spicy phenols, although it can add a hint of butterscotch.",
-        "image_url": "https://images.punkapi.com/v2/4.png",
-        "reviews": [
-          "Spicy crab cakes, say what?!",
-          "My mum hates it"
-        ]
-      }
-   ]
-   ```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-3. Add a new review to the page when the review form is submitted. **No
-   persistence is needed**.
+### Code Splitting
 
-### Bonus Deliverables
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-These bonus deliverables are here if you want an extra challenge and won't
-affect your score. **Make sure to commit your work to save your progress before
-attempting the bonus deliverables!**
+### Analyzing the Bundle Size
 
-1. Remove a review from the page when it is clicked. (Note: no persistence is
-   needed; it's fine if the review shows up again when the page is refreshed)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-2. Click a beer in the `<nav>` element on the left side of the page and have
-   that beer's details displayed in the main section of the page, replacing the
-   beer that is currently being displayed. Note that you may have to make an
-   additional GET request to access the beer's details.
+### Making a Progressive Web App
 
-## Extra Bonus
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-These extra bonus deliverables involve using `fetch` to update data on the
-`json-server` backend by using `POST`, `PATCH`, and `DELETE` requests. These are
-meant for an extra, extra challenge and won't affect your grade. **Make sure to
-commit your work to save your progress before attempting the extra bonus
-deliverables!**
+### Advanced Configuration
 
-1. When the review form is submitted, the review should be saved on the server
-   in addition to being displayed in the list of reviews. You will need to make
-   a request that follows this structure. Note that the body must contain an
-   array of **all** reviews for the beer, including your newly added review.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-   ```txt
-   PATCH /beers/:id
+### Deployment
 
-   Request Headers: {
-     Content-Type: application/json
-   }
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-   Request Body: {
-     "reviews": [
-        "old review",
-        "new review"
-      ]
-   }
-   ----
+### `npm run build` fails to minify
 
-   Example response:
-    {
-      "id": 1,
-      "name": "Oh So Flattening",
-      "description": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
-      "image_url": "https://i.ibb.co/wQ4G0w1/flatiron-brew.png",
-      "reviews": [
-        "old review",
-        "new review"
-      ]
-    }
-   ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-2. When the description form is submitted, the beer's description should be
-   updated on the server in addition to being updated on the page. You will need
-   to make a request that follows this structure:
-
-   ```txt
-   PATCH /beers/:id
-
-   Request Headers: {
-     Content-Type: application/json
-   }
-
-   Request Body: {
-     "description": "new description"
-   }
-   ----
-
-   Example response:
-    {
-      "id": 1,
-      "name": "Oh So Flattening",
-      "description": "new description",
-      "image_url": "https://i.ibb.co/wQ4G0w1/flatiron-brew.png",
-      "reviews": [
-        "old review",
-        "new review"
-      ]
-    }
-   ```
+## Code Author : Gideon Murage ##
